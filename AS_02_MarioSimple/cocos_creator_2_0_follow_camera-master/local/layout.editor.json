@@ -1,0 +1,98 @@
+{
+  "version": "1.1.1",
+  "windows": {
+    "main": {
+      "main": true,
+      "url": "app://editor/index.html",
+      "windowType": "dockable",
+      "x": 0,
+      "y": 0,
+      "width": 1536,
+      "height": 824,
+      "layout": {
+        "children": [
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "hierarchy"
+                ],
+                "height": 358,
+                "type": "panel",
+                "width": 306.25
+              },
+              {
+                "active": 0,
+                "children": [
+                  "assets"
+                ],
+                "height": 347.20001220703125,
+                "type": "panel",
+                "width": 306.25
+              }
+            ],
+            "height": 708.2000122070312,
+            "type": "dock-v",
+            "width": 306.25
+          },
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "scene"
+                ],
+                "height": 413.32501220703125,
+                "type": "panel",
+                "width": 755.2250366210938
+              },
+              {
+                "active": 0,
+                "children": [
+                  "console",
+                  "timeline"
+                ],
+                "height": 291.875,
+                "type": "panel",
+                "width": 755.2250366210938
+              }
+            ],
+            "height": 708.2000122070312,
+            "type": "dock-v",
+            "width": 755.2250366210938
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "node-library"
+            ],
+            "height": 708.2000122070312,
+            "type": "panel",
+            "width": 454.9250183105469
+          }
+        ],
+        "type": "dock-h"
+      },
+      "panels": [
+        "hierarchy",
+        "assets",
+        "scene",
+        "console",
+        "timeline",
+        "inspector",
+        "node-library"
+      ]
+    },
+    "worker": {}
+  },
+  "panels": {
+    "project-settings": {
+      "x": 207,
+      "y": 204,
+      "width": 600,
+      "height": 564
+    }
+  }
+}

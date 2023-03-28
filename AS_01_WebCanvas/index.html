@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>DrawTogether!!!</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <canvas id="art" width="900" height="700" style="background-color: white;"> </canvas>
+            <textarea name="textBox" id="textBox" cols="30" rows="1" class="text-style"></textarea>
+        </div>
+        <div class="grid-item">
+        <div id="toolbox">
+            <input type="image" src="src_pic/icon_pen.png" width="75" height="75" id="pen" class="command" onclick="changeDrawType('pen')">
+            <input type="image" src="src_pic/icon_eraser.png" width="75" height="75" id="eraser" class="command" onclick="changeDrawType('eraser')">
+            <input type="image" src="src_pic/icon_circle.png" width="75" height="75" id="circle" class="command" onclick="changeDrawType('circle')">
+            <input type="image" src="src_pic/icon_square.png" width="75" height="75" id="square" class="command" onclick="changeDrawType('square')">
+            <input type="image" src="src_pic/icon_tri.png" width="75" height="75" id="tri" class="command" onclick="changeDrawType('tri')">
+            
+        </div><br>
+
+        <div id="color_picker"> 
+            <div>
+                <input type="color" id="now_color" name="nowcolor"
+                       value="#e66465">
+                <label for="nowcolor">now color</label>
+            </div>
+        </div> <br>
+
+        <div id="blush">
+            <input type="button"  width="30" height="20" id="one" class="thickness" onclick="" value="1px">
+            <input type="button"  width="30" height="20" id="two" class="thickness" onclick="" value="2px">
+            <input type="button"  width="30" height="20" id="five" class="thickness" onclick="" value="5px">
+            <input type="button"  width="30" height="20" id="ten" class="thickness" onclick="" value="10px">
+            <input type="button"  width="30" height="20" id="fifteen" class="thickness" onclick="" value="15px">
+            <input type="button"  width="30" height="20" id="twenty" class="thickness" onclick="" value="20px">
+        </div> <br>
+
+        <div id="word_box">
+            <div class="inner_row">
+                <input type="image" src="src_pic/icon_word.png" width="75" height="75" id="text" class="command" onclick="changeDrawType('text')">
+                <small>Font Size:<br>Font Weight:</small>
+                <div id="inner_col">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input type="range" min="1" max="1000" value="50" class="slider" id="myFontWeight">
+                </div>
+                <div id="inner_col">
+                    <small>Font Type:</small>
+                    <select id="mySelect" onchange="changeFontType();">
+                        <option value="Arial"> Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Comic Sans MS"> Comic Sans MS</option>
+                        <option value="Papyrus"> Papyrus</option>
+                        <option value="微軟正黑體"> 微軟正黑體</option>
+                        <option value="標楷體"> 標楷體</option>
+                        <option value="新細明體"> 新細明體</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="util_box">
+            <input type="image" src="src_pic/icon_undo.png" width="75" height="75" id="undo" class="command" onclick="undo()">
+            <input type="image" src="src_pic/icon_redo.png" width="75" height="75" id="redo" class="command" onclick="redo()">
+            <input type="image" src="src_pic/icon_line_f.png" width="75" height="75" id="line_f" class="command" onclick="changeDrawType('line_f')">
+            <input type="image" src="src_pic/icon_line.png" width="75" height="75" id="line" class="command" onclick="changeDrawType('line')">
+            <input type="image" src="src_pic/icon_clear.png" width="75" height="75" id="open" class="command" onclick="clearCanvas()"/><br>
+            <a class="command" id="download" download="myImage.png" href="" onclick="download_img(this);" >Save by Download</a>
+            <input type="file" id="inp" accept="image/png, image/jpeg" style="margin-left: 25px;">
+        </div>
+
+        <div id="logo">
+            <img src="src_pic/logo.png" width="490" height="165" style="margin-left: 50px;">
+        </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

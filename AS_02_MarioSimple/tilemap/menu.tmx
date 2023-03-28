@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="left-up" width="5" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="1204" columns="43">
+  <image source="tileset.png" trans="ff00ff" width="688" height="450"/>
+ </tileset>
+ <layer id="1" name="タイル・レイヤー 1" width="5" height="5">
+  <data encoding="csv">
+17,18,18,18,19,
+60,1054,1054,1054,62,
+60,1054,1054,1054,62,
+60,1054,1054,1054,62,
+103,104,104,104,105
+</data>
+ </layer>
+ <layer id="2" name="タイル・レイヤー 2" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+</map>
